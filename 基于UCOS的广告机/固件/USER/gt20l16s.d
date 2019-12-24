@@ -1,0 +1,10 @@
+.\gt20l16s.o: ..\BSP\GT20L16S.c
+.\gt20l16s.o: ..\CMSIS\stm32f10x.h
+.\gt20l16s.o: ..\CMSIS\core_cm3.h
+.\gt20l16s.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\gt20l16s.o: ..\CMSIS\system_stm32f10x.h
+.\gt20l16s.o: ..\USER\stm32f10x_conf.h
+.\gt20l16s.o: ..\FWlib\inc\stm32f10x_gpio.h
+.\gt20l16s.o: ..\CMSIS\stm32f10x.h
+.\gt20l16s.o: ..\FWlib\inc\stm32f10x_rcc.h
+.\gt20l16s.o: ..\BSP\GT20L16s.h

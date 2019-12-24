@@ -1,0 +1,79 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.23.0.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: w w, w, LIC=AK130-BFMN2-34XST-RXUF9-X8RHU-1IF43
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.23
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 4 (build 422)
+Assembler:       Armasm.exe V5.06 update 4 (build 422)
+Linker/Locator:  ArmLink.exe V5.06 update 4 (build 422)
+Library Manager: ArmAr.exe V5.06 update 4 (build 422)
+Hex Converter:   FromElf.exe V5.06 update 4 (build 422)
+CPU DLL:         SARMCM3.DLL V5.23
+Dialog DLL:      DARMSTM.DLL V1.68.0.0
+Target DLL:      Segger\JL2CM3.dll V2.99.23.0
+Dialog DLL:      TARMSTM.DLL V1.66.0.0
+ 
+<h2>Project:</h2>
+H:\git\stm32f103c8t6\stm32c8t6-sdk\基于UCOS的广告机\固件\USER\STM32-DEMO.uvproj
+Project File Date:  12/23/2019
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 4 (build 422)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'LED-DEMO'
+compiling app.c...
+..\APP\app.c(39): warning:  #223-D: function "memset" declared implicitly
+  				memset(display_buf,0,sizeof(display_buf));
+..\APP\app.c(51): warning:  #177-D: variable "i"  was declared but never referenced
+  	unsigned char i,j;	
+..\APP\app.c(51): warning:  #177-D: variable "j"  was declared but never referenced
+  	unsigned char i,j;	
+..\APP\app.c(52): warning:  #177-D: variable "p"  was declared but never referenced
+    unsigned char *p;						 //定义指向page数组的指针
+..\APP\app.c(122): warning:  #223-D: function "memset" declared implicitly
+  											       memset(Text,0,sizeof(Text));
+..\APP\app.c(124): warning:  #223-D: function "memcpy" declared implicitly
+  										         memcpy(Text,&uart_R_buf[4],Text_l);
+..\APP\app.c(126): warning:  #223-D: function "UART1SendByte" declared implicitly
+  										         UART1SendByte(Success);
+..\APP\app.c(136): warning:  #223-D: function "UART1SendByte" declared implicitly
+  					         UART1SendByte(Fail);
+..\APP\app.c(144): warning:  #223-D: function "UART1SendByte" declared implicitly
+  					UART1SendByte(Fail);
+..\APP\app.c(183): warning:  #223-D: function "UART1SendByte" declared implicitly
+  				{UART1SendByte(AT_IN[i]);}
+..\APP\app.c(187): warning:  #223-D: function "UART1SendByte" declared implicitly
+  				UART1SendByte(AT_MAC[i]);
+..\APP\app.c(190): warning:  #223-D: function "memset" declared implicitly
+  				memset(Text,0,sizeof(Text));
+..\APP\app.c(198): warning:  #223-D: function "memcpy" declared implicitly
+  				memcpy(Text,&uart_R_buf[i],uart_R_Length-i);
+..\APP\app.c(204): warning:  #223-D: function "UART1SendByte" declared implicitly
+  					UART1SendByte(AT_OUT[i]);
+..\APP\app.c(218): warning:  #223-D: function "UART1SendByte" declared implicitly
+  						{UART1SendByte(AT_IN[i]);}						
+..\APP\app.c(223): warning:  #223-D: function "UART1SendByte" declared implicitly
+  							UART1SendByte(AT_DEFAULT[i]);
+..\APP\app.c(229): warning:  #223-D: function "UART1SendByte" declared implicitly
+  							UART1SendByte(AT_OUT[i]);
+..\APP\app.c(233): warning:  #223-D: function "memcpy" declared implicitly
+  						memcpy(Text,uart_R_buf,2);
+..\APP\app.c(162): warning:  #177-D: variable "j"  was declared but never referenced
+  	unsigned char i,j;	
+..\APP\app.c(163): warning:  #177-D: variable "p"  was declared but never referenced
+    unsigned char *p;						 //定义指向page数组的指针
+..\APP\app.c: 20 warnings, 0 errors
+linking...
+Program Size: Code=10460 RO-data=596 RW-data=124 ZI-data=5924  
+FromELF: creating hex file...
+".\STM32-DEMO.axf" - 0 Error(s), 20 Warning(s).
+Build Time Elapsed:  00:00:04
+</pre>
+</body>
+</html>

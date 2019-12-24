@@ -1,0 +1,10 @@
+.\ht1632c.o: ..\BSP\ht1632C.c
+.\ht1632c.o: ..\CMSIS\stm32f10x.h
+.\ht1632c.o: ..\CMSIS\core_cm3.h
+.\ht1632c.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\ht1632c.o: ..\CMSIS\system_stm32f10x.h
+.\ht1632c.o: ..\USER\stm32f10x_conf.h
+.\ht1632c.o: ..\FWlib\inc\stm32f10x_gpio.h
+.\ht1632c.o: ..\CMSIS\stm32f10x.h
+.\ht1632c.o: ..\FWlib\inc\stm32f10x_rcc.h
+.\ht1632c.o: ..\BSP\ht1632c.h

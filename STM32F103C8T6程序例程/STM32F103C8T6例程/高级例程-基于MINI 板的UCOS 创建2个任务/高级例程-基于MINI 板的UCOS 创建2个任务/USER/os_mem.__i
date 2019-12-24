@@ -1,0 +1,6 @@
+--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O2 --apcs=interwork -I ..\CMSIS -I ..\FWlib\inc -I ..\USER -I ..\APP -I ..\BSP -I ..\uCOS-II\Ports -I ..\uCOS-II\Source
+-IC:\Keil_v5\ARM\RV31\INC
+-IC:\Keil_v5\ARM\CMSIS\Include
+-IC:\Keil_v5\ARM\Inc\ST\STM32F10x
+-D__UVISION_VERSION="523" -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD
+-o .\os_mem.o --omf_browse .\os_mem.crf --depend .\os_mem.d "..\uCOS-II\Source\os_mem.c"

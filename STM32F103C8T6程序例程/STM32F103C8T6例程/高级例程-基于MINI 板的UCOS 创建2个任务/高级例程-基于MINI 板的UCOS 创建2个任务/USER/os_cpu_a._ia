@@ -1,0 +1,6 @@
+--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1"
+-IC:\Keil_v5\ARM\RV31\INC
+-IC:\Keil_v5\ARM\CMSIS\Include
+-IC:\Keil_v5\ARM\Inc\ST\STM32F10x
+--pd "__UVISION_VERSION SETA 523"
+--list ..\listing\os_cpu_a.lst --xref -o .\os_cpu_a.o --depend .\os_cpu_a.d "..\uCOS-II\Ports\os_cpu_a.asm"
