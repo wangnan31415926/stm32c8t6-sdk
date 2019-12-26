@@ -350,7 +350,7 @@ void HT1632C_1_Init(void)		//HT1632C初始化函数
 	HT1632C_1_Writer_CMD(LED_ON);
 }
 
-
+extern unsigned short display_length;
 /************************************wn drive*****************************************/
 //buf 显示缓冲区，待显示数据
 //length 需要显示的数据大小，一共要显示多少字节
@@ -365,6 +365,12 @@ void Display(unsigned char* buf, unsigned short length)
       //		//所以一共循环length/2次
 			for(i=0,j=0;i<length/2;i++,j++,j++)		 
 				{
+					if(length!=display_length)
+          {
+						HT1632C_1_clr();
+						HT1632C_clr();
+						return;
+					}
 					//一块屏是16行，R_MAX列
 					if(i>((length/2)-R_MAX))						 //每显示一屏，指针向后移动2个字节（即一列）
 					{

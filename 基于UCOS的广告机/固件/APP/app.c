@@ -11,6 +11,7 @@ unsigned char uart_R_buf[128];//串口接收缓冲区
 unsigned char uart_R_Length=0;//串口接收长度
 unsigned char uart_R_flag=0;  //串口接收完成标志位
 
+extern OS_STK task_led2_stk[TASK_LED2_STK_SIZE];	
 //任务1 用来获取字模
 void Task_Start(void *p_arg)
 {
@@ -35,10 +36,15 @@ void Task_Start(void *p_arg)
 			
       if(Display_flag==2)//有显示需要更新
 			{
+//				UART1SendByte(0x12);
 				Display_flag=0;
 				memset(display_buf,0,sizeof(display_buf));
 				display_length=GET_GB2312_string(Text,display_buf);
+//				HT1632C_1_clr();
+//				HT1632C_clr();
+//				OSTimeDlyHMSM(0, 0,0,1000);	
 				Display_flag=1;  //显示更新完成
+//				UART1SendByte(0x34);
 			}
  			
      			
@@ -59,10 +65,8 @@ void Task_LED2(void *p_arg)
 	{
 		if(Display_flag==1)
 			{
-				HT1632C_1_clr();
-				HT1632C_clr();
+//				UART1SendByte(0xaa);
 				Display(display_buf,display_length);
-				OSTimeDlyHMSM(0, 0,0,100);						 //移动延时
 			}
 		
 		OSTimeDlyHMSM(0, 0,0,10);
